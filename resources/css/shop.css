@@ -1,0 +1,56 @@
+/*
+ * Developer: Olha Rosolovska
+ * Project: Mini Modem Case - CMS & Marketplace
+ * File: Marketplace storefront styles
+ */
+
+:root {
+    --mmc-brand: #0284c7;
+    --mmc-brand-dark: #0369a1;
+    --mmc-ink: #0f172a;
+}
+
+.mmc-line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mmc-line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mmc-spec-table dl > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.5rem 0;
+}
+
+.mmc-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.mmc-badge--in-stock { background: #d1fae5; color: #065f46; }
+.mmc-badge--low-stock { background: #fef3c7; color: #92400e; }
+.mmc-badge--out-of-stock { background: #ffe4e6; color: #9f1239; }
+
+.mmc-admin-sidebar a.is-active {
+    background: var(--mmc-brand);
+    color: #ffffff;
+}
+
+@media print {
+    .mmc-no-print { display: none !important; }
+}
